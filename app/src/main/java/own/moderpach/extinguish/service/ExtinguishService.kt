@@ -7,7 +7,9 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.content.ServiceConnection
 import android.content.pm.PackageManager
+import android.content.pm.ServiceInfo
 import android.os.Binder
+import android.os.Build
 import android.os.IBinder
 import android.provider.Settings
 import android.util.Log
@@ -455,7 +457,12 @@ class ExtinguishService : LifecycleService() {
                             floatingButtonHost?.isShowing ?: false,
                             feature.enabledFloatingButtonControl
                         ).also {
-                            startForeground(NotificationHost.NOTIFICATION_ID, it)
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                                // Fix the crash at android 15, java.lang.SecurityException: Starting FGS with type specialUse callerApp=ProcessRecord{7536cde 20348:own.moderpach.extinguish/u0a616} targetSDK=35 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SPECIAL_USE]
+                                startForeground(NotificationHost.NOTIFICATION_ID, it, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE)
+                            } else {
+                                startForeground(NotificationHost.NOTIFICATION_ID, it)
+                            }
                         }
 
                         state.update { State.Prepared }
