@@ -28,8 +28,8 @@
     <string name="Disabled">未启用</string>
     <string name="Touch_screen_to_turn_it_on">触碰屏幕亮屏</string>
     <string name="Notification_control">通知控制</string>
-    <string name="str_clickToTurnScreenOn">点按亮屏</string>
-    <string name="str_clickToTurnScreenOff">点按息屏</string>
+    <string name="str_clickToTurnScreenOn">双击亮屏</string>
+    <string name="str_clickToTurnScreenOff">双击息屏</string>
     <string name="Quick_settings_tiles_control">快速设置磁铁控制</string>
     <string name="External_control">外部控制</string>
     <string name="About">关于</string>

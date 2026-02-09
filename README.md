@@ -1,8 +1,18 @@
-# Extinguish
+# Extinguish- Double-Click Optimized Edition
 
 English
 |
 [简体中文](https://github.com/Moderpach/Extinguish/blob/master/README_ZH_CN.md)
+
+This is a fork based on [Moderpach/Extinguish](https://github.com/Moderpach/Extinguish).
+## Key Changes
+- **Improved Trigger Method**: Changed volume button control from "single-click" to "double-click" to prevent accidental triggers
+- Supports double-clicking volume up/down keys to turn the screen on/off
+- Double-click interval set to 300ms
+## Original Project
+Original Repository: https://github.com/Moderpach/Extinguish
+
+Original Project Description:
 
 Helps you run any android apps as if the screen is on while it is off.
 

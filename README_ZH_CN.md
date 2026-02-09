@@ -1,8 +1,20 @@
-# Extinguish
+# Extinguish - 双击优化版
 
 [English](https://github.com/Moderpach/Extinguish/blob/master/README.md)
 |
 简体中文
+
+这是基于 [Moderpach/Extinguish](https://github.com/Moderpach/Extinguish) 的 Fork 版本。
+
+## 主要修改
+- **触发方式优化**：将音量键控制从"单击"改为"双击"触发，避免误触
+- 支持双击音量上键/下键进行亮屏/息屏操作
+- 双击间隔设定为 300ms
+
+## 原始项目
+原项目地址：https://github.com/Moderpach/Extinguish
+
+原项目功能介绍：
 
 帮助您在屏幕关闭时运行任何 Android 应用程序，就如同屏幕打开时一样。
 
