@@ -2,7 +2,7 @@
 
 English
 |
-English | [简体中文](https://github.com/F111111shhh/Extinguish/blob/master/README_ZH.md)
+[简体中文](https://github.com/F111111shhh/Extinguish/blob/master/README_ZH_CN.md)
 
 This is a fork based on [Moderpach/Extinguish](https://github.com/Moderpach/Extinguish).
 ## Key Changes
