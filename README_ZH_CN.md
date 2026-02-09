@@ -1,6 +1,6 @@
 # Extinguish - 双击优化版
 
-[English](https://github.com/Moderpach/Extinguish/blob/master/README.md)
+[English](https://github.com/F111111shhh/Extinguish/blob/master/README.md)
 |
 简体中文
 
